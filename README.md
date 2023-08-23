@@ -29,7 +29,7 @@ yarn vscode:package
 
 ## Documents
 
-如果想参考使用这个工程，可以查看这个文档：
+如果想参考使用这个工程，可以查看这个文档：[使用文档](https://chenxming.github.io/2023/08/23/从零开发一款ChatGPT%20VSCode插件/)
 
 ## Support:
 
