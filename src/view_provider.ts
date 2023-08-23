@@ -36,19 +36,19 @@ export default class ChatGptViewProvider implements vscode.WebviewViewProvider {
 
     public async ensureApiKey() {
         
-        this.apiKey = await this.context.globalState.get('chatgpt-api-key') as string;
+        this.apiKey = await this.context.globalState.get('gpt-api-key') as string;
         const apiKeyInput = await vscode.window.showInputBox({
             prompt: this.apiKey?`您当前的API Key是：${this.apiKey},您可以重新输入并进行更新`:"请输入你的API Key",
             ignoreFocusOut: true,
         });
         if (apiKeyInput?.length) {
             this.apiKey = apiKeyInput!;
-            this.context.globalState.update('chatgpt-api-key', this.apiKey);
+            this.context.globalState.update('gpt-api-key', this.apiKey);
         }
     }
 
     public async sendOpenAiApiRequest(prompt: string, code?: string) {
-        this.apiKey = await this.context.globalState.get('chatgpt-api-key') as string;
+        this.apiKey = await this.context.globalState.get('gpt-api-key') as string;
         if(!this.apiKey) {
             await this.ensureApiKey();
         }
