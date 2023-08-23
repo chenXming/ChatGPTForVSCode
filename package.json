@@ -1,10 +1,22 @@
 {
   "name": "chatgpt-for-vscode",
-  "displayName": "ChatGPTForVSCode",
+  "displayName": "chatgpt-for-vscode",
   "description": "这是一个VSCode 的ChatGPT 插件",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "publisher": "chenxming",
+  "keywords": [
+    "vscode",
+    "plugin",
+    "chatGPT",
+    "chatgpt",
+    "ChatGPTForVSCode",
+    "gpt",
+    "gpt-for-vscode",
+    "chatgpt-for-vscode"
+  ],
+  "icon": "images/ChatGPT.png",
   "engines": {
-    "vscode": "^1.81.0"
+    "vscode": "^1.27.0"
   },
   "categories": [
     "Other"
@@ -109,7 +121,7 @@
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "20.2.5",
-    "@types/vscode": "^1.81.0",
+    "@types/vscode": "^1.27.0",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vscode/test-electron": "^2.3.2",
@@ -121,5 +133,14 @@
     "undici": "^5.23.0",
     "webpack": "^5.85.0",
     "webpack-cli": "^5.1.1"
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+      "url": "https://github.com/chenXming/ChatGPTForVSCode/issues"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/chenXming/ChatGPTForVSCode"
+  },
+  "homepage": "https://github.com/chenXming/ChatGPTForVSCode"
 }
